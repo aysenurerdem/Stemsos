@@ -2,7 +2,7 @@
 
 ##Stemsos
 
-Team Leader : Aysenur Erdem
+Team Leader : Aysenur Erdem.
 
 Description:
 
