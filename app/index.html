@@ -1,0 +1,82 @@
+        <!DOCTYPE html>
+        <html ng-app="stemsos" lang="en">
+
+
+            <head>
+                <meta charset="UTF-8">
+                <title>Main Page</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+                <link rel="stylesheet" href="style.css" />
+            </head>
+        <body style="border: 2px; height: 650px">
+
+
+        <div id="topNavigation"  style="border:  2px; height: 50px; background-color: #484547">
+
+        </div>
+        <div style="border: 2px; width:1280px; height: 600px">
+
+            <div style="  position: relative; float: left; border:  2px; width: 100px; height: 100%; background-color: #484547 ">
+
+                <a href="#/dashboard">
+
+                    <div class="navItem">
+                        <span class="glyphicon glyphicon-home navItemLogo" aria-hidden="true"></span>
+                        <span class="navItemText" >Dashboard </span>
+                    </div>
+
+                </a>
+
+                <a href="#/contracted">
+
+
+                    <div class="navItem">
+                        <span  class="glyphicon glyphicon-briefcase navItemLogo " aria-hidden="true"></span>
+                        <span class="navItemText" >Contracted <br>Schools </br> </span>
+                    </div>
+
+                </a>
+
+
+                <div class="navItem">
+                    <span class="glyphicon glyphicon-file navItemLogo " aria-hidden="true"></span>
+                    <span class="navItemText" >Level One <br>Submission </br> </span>
+                </div>
+
+
+                <div class="navItem">
+                    <span  class="glyphicon glyphicon-file navItemLogo "  aria-hidden="true"></span>
+                    <span class="navItemText" >E-portfolio<br>Submission </br> </span>
+                </div>
+
+
+                <div class="navItem" >
+                    <span class="glyphicon glyphicon-user navItemLogo "  aria-hidden="true"></span>
+                    <span class="navItemText" >My Students </span>
+                </div>
+
+
+                <div class="navItem">
+                    <span class="glyphicon glyphicon-education navItemLogo"  aria-hidden="true"></span>
+                    <span class="navItemText" >School Roster </span>
+                </div>
+
+            </div>
+
+            <div style="position: relative; float: left; border:  2px; width: 90%; height: 100%">
+
+                <div ng-view></div>
+
+            </div>
+        </div>
+
+
+        </body>
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"> </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.js"></script>
+            <script src="main.js" ></script>
+
+
+        </html>
