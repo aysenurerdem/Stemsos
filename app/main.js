@@ -1,7 +1,7 @@
 /**
  * Created by aysenurerdem on 4/2/16.
  */
-var app = angular.module('stemsos', ["ngRoute"])
+var app = angular.module('stemsos', ["ngRoute", "ui.grid"])
 
 
 app.config(['$routeProvider',
@@ -65,18 +65,39 @@ app.controller('levelCtrl', function ($scope) {
 
 });
 
-app.controller('portfolio', function ($scope) {
+app.controller('portfolioCtrl', function ($scope) {
     $scope.firstName = "E-portfolio submisson page"
 
 });
 
-app.controller('students', function ($scope) {
+app.controller('studentsCtrl', function ($scope) {
     $scope.firstName = "My students page"
 
 });
 
-app.controller('schoolRoster', function ($scope) {
-    $scope.firstName = "school Roster page"
+app.controller('schoolRosterCtrl', function ($scope) {
+    $scope.firstName = "school Roster page";
+    $scope.myData = [
+        {
+            "firstName": "Cox",
+            "lastName": "Carney",
+            "company": "Enormo",
+            "employed": true
+        },
+        {
+            "firstName": "Lorraine",
+            "lastName": "Wise",
+            "company": "Comveyer",
+            "employed": false
+        },
+        {
+            "firstName": "Nancy",
+            "lastName": "Waters",
+            "company": "Fuelton",
+            "employed": false
+        }
+    ];
 
 });
+
 
