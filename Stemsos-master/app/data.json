@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "572a0cd89260b5bab9b7d013",
+    "id": 0,
+    "guid": "501829c0-16ab-4ad4-a4ee-9dbecf39673b",
+    "grade": 10,
+    "name": "Janelle Burks",
+    "gender": "female",
+    "school": "OBONES",
+    "email": "janelleburks@obones.com",
+    "assigned" : false
+  },
+  {
+    "_id": "572a0cd877f4d6decb593bb5",
+    "id": 1,
+    "guid": "d9f42da8-6fc4-489a-823e-b9ec9bfc3691",
+    "grade": 10,
+    "name": "Trina Patrick",
+    "gender": "female",
+    "school": "KEENGEN",
+    "email": "trinapatrick@keengen.com",
+    "assigned" : false
+  },
+  {
+    "_id": "572a0cd8d71e2a0394cdc22e",
+    "id": 2,
+    "guid": "438a64ed-46c2-47cd-9f2c-e472369b54b7",
+    "grade": 9,
+    "name": "Jewell Barron",
+    "gender": "female",
+    "school": "VURBO",
+    "email": "jewellbarron@vurbo.com",
+    "assigned" : false
+  },
+  {
+    "_id": "572a0cd87385b8c5bd0b898d",
+    "id": 3,
+    "guid": "cd48d6dc-9d8b-4df9-9fda-3c6c74413dc4",
+    "grade": 10,
+    "name": "Holloway Stevenson",
+    "gender": "male",
+    "school": "SUPREMIA",
+    "email": "hollowaystevenson@supremia.com",
+    "assigned" : false
+  },
+  {
+    "_id": "572a0cd87e21afb219f4b2b8",
+    "id": 4,
+    "guid": "06b28c48-0cea-4b5d-893c-5e7b82b13c6e",
+    "grade": 8,
+    "name": "Elba Browning",
+    "gender": "female",
+    "school": "COMTEST",
+    "email": "elbabrowning@comtest.com",
+    "assigned" : false
+  },
+  {
+    "_id": "572a0cd8452a2791dc208e9b",
+    "id": 5,
+    "guid": "51c87ca3-97bf-45b1-a6ae-c07733b5a0b3",
+    "grade": 6,
+    "name": "Hyde Diaz",
+    "gender": "male",
+    "school": "RAMJOB",
+    "email": "hydediaz@ramjob.com",
+    "assigned" : false
+  }
+]
