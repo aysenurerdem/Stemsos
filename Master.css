@@ -1,0 +1,517 @@
+BODY
+{
+    BACKGROUND-COLOR: #c0c0c0;
+    COLOR: #004080;
+    FONT-FAMILY: 'Arial';
+	FONT-SIZE: 12px                 
+}
+H1
+{
+background: #660066;
+font-family: Arial;
+font-size: 16px;
+font-style: normal;
+font-weight: bold;
+color: #FFE101;
+vertical-align: middle;
+margin : 0px 0px;
+border-left: 0px;
+border-right: 0px;
+border-top: 0px;
+border-bottom: 0px;
+padding : 0px 0px;
+text-align: left; width: 100%; height: 16pt
+; text-indent: 2px
+}
+
+H2
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H3
+{
+    COLOR: #660066;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+
+H4
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+
+H5
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+H6
+{
+    COLOR: #6666CC;
+    FONT-FAMILY: 'Times New Roman';
+    TEXT-TRANSFORM: capitalize
+}
+TABLE
+{
+	FONT-SIZE: 12px;
+}
+INPUT
+{
+	FONT-SIZE: 12px;
+}
+TEXTAREA
+{	
+	FONT-SIZE: 12px;
+}
+SELECT
+{
+	FONT-SIZE: 12px;
+}
+.StaticHeader
+{ 
+position: relative; 
+top: expression(this.offsetParent.scrollTop-1); 
+}
+.DIV_incidentComments
+{
+	height: 32em;
+	width: 100%;
+	border:1px;
+	border-style: solid;
+	border-color: #660066;
+	padding:0.2em 0.2em;
+	overflow-y: auto;
+}
+
+.DIV_newMiscellaneous
+{
+	height: 16em;
+	width: 100%;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: #660066;
+	padding:0.2em 0.2em;
+	overflow-y: auto;
+	
+}
+.DIV_newIncident
+{
+	height: 34em;
+	width: 100%;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: #660066;
+	padding:0.2em 0.2em;
+	overflow-y: auto;
+	
+}
+.DIV_mobileIncident
+{
+	height: 18em;
+	width: 100%;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-style: solid;
+	border-color: #660066;
+	padding:0.2em 0.2em;
+	overflow-y: auto;
+	
+}
+.DIV_incidentUnitInfo
+{
+	height: 8em;
+	width: 300;
+	overflow: auto;
+	border: solid gray 1px;
+	padding:0.2em 0.2em;	
+}
+.DIV_DetectionLog
+{
+	height: 19em;
+	width: 500;
+	overflow: auto;
+	border: solid gray 1px;
+	padding:0.2em 0.2em;	
+}
+.DIV_incidentReporteeInfo
+{
+	height: 10em;
+	width: 100%;
+	overflow: auto;
+	border: solid gray 1px;
+	padding:0.2em 0.2em;	
+}
+.DIV_addUpdateUnitInfo
+{
+	height: 10em;
+	width: 600;
+	overflow: auto;
+	border: solid gray 1px;	
+	padding:0.2em 0.2em;	
+}
+.DIV_incidentLog
+{
+	height: 18em;
+	width: 100%;
+	border:1px;
+	border-style: solid;
+	border-color: #660066;
+	padding:0.2em 0.2em;
+	overflow-y: auto;
+}
+.DIV_streetLog
+{
+	height: 35em;
+	width: 100%;
+	border:1px;
+	border-style: solid;
+	border-color: #660066;
+	padding:0.2em 0.2em;
+	overflow-y: auto;
+}
+.readOnly
+{
+	background-color: #C0C0C0;
+}
+.form_button
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFE101;
+	background-color: #660066;
+	border-color: #808080;
+	clip:     rect(   );
+	margin-left: 2px
+}
+.form_button_150
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFE101;
+	background-color: #660066;
+	border-color: #808080;
+	clip:     rect(   );
+	margin-left: 2px;
+	width: 150px
+}
+.f_button
+{
+	font-family: Arial;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFE101;
+	background-color: #660066;
+	border-color: #808080;
+	clip:     rect(   );
+	margin-left: 2px;
+	width: 130px;
+	height: 50px;	             
+}
+.blue_table_header
+{
+	background-color: #004080;
+	color:#FFFFFF;
+	font-weight: bold
+}
+.blue_table_header a:link
+{
+	background-color: #004080;
+	color:#FFFFFF;
+	font-weight: bold
+}
+.blue_table_header a:visited
+{
+	background-color: #004080;
+	color:#FFFFFF;
+	font-weight: bold
+}
+.blue_table_header a:active
+{
+	background-color: #004080;
+	color:#FFFFFF;
+	font-weight: bold
+}
+.purple_table_header
+{
+	background-color: #660066;
+	color:#FFE101;
+	font-weight: bold;
+	font-size: 12px;
+	TEXT-TRANSFORM: uppercase;
+}
+.unit_info_table
+{
+	background-color: #660066;
+	color:#FFFFFF;
+	font-weight: bold;
+}
+.unit_info_sub_table
+{
+	color:#FFFFFF;
+	font-size: 10px;
+	font-weight: bold;
+}
+.AdminMenuTable
+{
+	color:#FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+.menu_table
+{	
+	color:#FFE101;
+	font-size: 12px;
+	font-weight: bold;
+}
+.bottom_table_line
+{
+	border-style: solid;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-color: #660066;
+}
+.top_table_line
+{
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-color: #660066;
+}
+.border_table
+{
+	border-style: solid;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-color: #660066;
+}
+.messages
+{
+	color:red;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.suggestion_list
+{
+background: #660066;
+border: 1px solid;
+padding: 4px;
+font-size: 10px;
+}
+.suggestion_list ul
+{
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+.suggestion_list a
+{
+background: #660066;	
+text-decoration: none;
+color: #FFE101;
+}
+.suggestion_list .selected
+{
+background: #FFE101;
+color: #660066;
+}
+.suggestion_list .selected a
+{
+background: #FFE101;
+color: #660066;
+}
+.autosuggest
+{
+display: none;
+}
+.errorTextbox
+{
+	BACKGROUND-COLOR: Red;
+}
+.whiteHref a:link
+{
+	color:#FFFFFF;
+	font-size: 10px;
+	font-weight: bold;
+}
+.whiteHref a:visited
+{
+	color:#FFFFFF;
+	font-size: 10px;
+	font-weight: bold;
+}
+.whiteHref a:active
+{
+	color:#FFFFFF;
+	font-size: 10px;
+	font-weight: bold;
+}
+.lightBlueHref a:link
+{
+	color:#72a3a3;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: italic;
+}
+.lightBlueHref a:visited
+{
+	color:#72a3a3;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: italic;
+}
+.lightBlueHref a:active
+{
+	color:#72a3a3;
+	font-size: 10px;
+	font-weight: bold;
+	font-style: italic;
+}
+.whiteHrefAdmin a:link
+{
+	color:#FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+.whiteHrefAdmin a:visited
+{
+	color:#FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+.whiteHrefAdmin a:active
+{
+	color:#FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+.calendar
+{
+	position:absolute;
+	visibility:hidden;
+	background-color:white;
+}
+.TESTcpYearNavigation,
+.TESTcpMonthNavigation
+		{
+		background-color:#004080;
+		text-align:center;
+		vertical-align:center;
+		text-decoration:none;
+		color:#FFFFFF;
+		font-weight:bold;
+		}
+.TESTcpDayColumnHeader,
+.TESTcpYearNavigation,
+.TESTcpMonthNavigation,
+.TESTcpCurrentMonthDate,
+.TESTcpCurrentMonthDateDisabled,
+.TESTcpOtherMonthDate,
+.TESTcpOtherMonthDateDisabled,
+.TESTcpCurrentDate,
+.TESTcpCurrentDateDisabled,
+.TESTcpTodayText,
+.TESTcpTodayTextDisabled,
+.TESTcpText
+		{
+		font-family:arial;
+		font-size:8pt;
+		}
+TD.TESTcpDayColumnHeader
+		{
+		text-align:right;
+		border:solid thin #6677DD;
+		border-width:0 0 1 0;
+		}
+.TESTcpCurrentMonthDate,
+.TESTcpOtherMonthDate,
+.TESTcpCurrentDate
+		{
+		text-align:right;
+		text-decoration:none;
+		}
+.TESTcpCurrentMonthDateDisabled,
+.TESTcpOtherMonthDateDisabled,
+.TESTcpCurrentDateDisabled
+		{
+		color:#D0D0D0;
+		text-align:right;
+		text-decoration:line-through;
+		}
+.TESTcpCurrentMonthDate
+		{
+		color:#004080;
+		font-weight:bold;
+		}
+.TESTcpCurrentDate
+		{
+		color: #FFFFFF;
+		font-weight:bold;
+		}
+.TESTcpOtherMonthDate
+		{
+		color:#808080;
+		}
+TD.TESTcpCurrentDate
+		{
+		color:#FFFFFF;
+		background-color: #6677DD;
+		border-width:1;
+		border:solid thin #000000;
+		}
+TD.TESTcpCurrentDateDisabled
+		{
+		border-width:1;
+		border:solid thin #FFAAAA;
+		}
+TD.TESTcpTodayText,
+TD.TESTcpTodayTextDisabled
+		{
+		border:solid thin #6677DD;
+		border-width:1 0 0 0;
+		}
+A.TESTcpTodayText,
+SPAN.TESTcpTodayTextDisabled
+		{
+		height:20px;
+		}
+A.TESTcpTodayText
+		{
+		color:#004080;
+		font-weight:bold;
+		}
+SPAN.TESTcpTodayTextDisabled
+		{
+		color:#D0D0D0;
+		}
+.TESTcpBorder
+		{
+		border:solid thin #004080;
+		}
+
+
+		

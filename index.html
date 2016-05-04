@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	body {
+		font:Arial;
+		font-size:14px;
+	}
+	#header {
+		background-color:black;
+		color:white;
+		text-align:center;
+		padding:5px;
+	}
+	#section {
+		float:left;
+		padding:10px;
+	}
+	#footer {
+		clear:both;
+		text-align:center;
+		padding:5px;
+	}
+	h1
+	{
+		font-size:18px;
+	}
+
+	input:required,
+	select:required,
+	textarea:required {
+	  border-color: red !important;
+	}
+	input:required + label {
+	  color: red;
+	}
+
+	form {
+	  padding: 20px;
+	  max-width: 500px;
+	  margin: 0 auto;
+	}
+	form div {
+	  padding: 5px;
+	}
+	label {
+	  display: block;
+	}
+	input + label {
+	  display: inline-block;
+	  margin-right: 10px;
+	}
+
+	input[type=text],
+	input[type=email],
+	select,
+	textarea {
+	  border: 1px solid #999;
+	  padding: 5px;
+	  width: 100%;
+	}
+</style>
+<LINK href="css/calendar.css" rel="stylesheet" type="text/css">
+<script language="Javascript" src="scripts/PhoneNumber.js"></script>
+<SCRIPT language="JavaScript" src="scripts/CalendarPopup.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="scripts/AnchorPosition.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="scripts/date.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="scripts/PopupWindow.js"></SCRIPT>
+<SCRIPT language="javascript">
+
+var now = new Date();
+now.setDate(now.getDate() - 1);
+var cal17 = new CalendarPopup("testdiv1");
+cal17.setCssPrefix("TEST");
+cal17.showYearNavigation();
+
+function selectDate(fieldName, anchorName, dateFormat, dateparm)
+{
+	if(dateparm == null || dateparm == '')
+	{
+		cal17.addDisabledDates(null,formatDate(now,"yyyy-MM-dd"));
+		cal17.select(fieldName,anchorName,dateFormat); return false;
+	}
+	else
+	{
+		var newDate = new Date(dateparm);
+		newDate.setDate(newDate.getDate() - 1);
+		cal17.addDisabledDates(null,formatDate(newDate,"yyyy-MM-dd"));
+		cal17.select(fieldName,anchorName,dateFormat); return false;
+	}
+}
+</SCRIPT>
+</head>
+<body>
+<div id="autosuggest"><ul></ul></div>
+<DIV ID="testdiv1" class="calendar"></DIV>
+<div id="header"><center><h1>BOOK AN APPOINTMENT FOR HANDYMAN SERVICES</h1></center></div>
+<form name="myForm" action="Success.html" onsubmit="return validateForm()" method="post">
+<div id="section">
+  <div>
+    <label for="lname">Last Name</label>
+    <input type="text" name="lname" id="lname" required />
+  </div>
+  <div>
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" id="fname" required />
+  </div>
+
+  <div>
+    <label for="mname">Middle Initial</label>
+    <input type="text" name="mname" id="mname" />
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required />
+  </div>
+
+  <div>
+    <label for="pphone">Primary Phone</label>
+    <input type="text" name="pphone" id="pphone" required onfocus="formatPhoneNumber(this)" maxlength="13"/>
+  </div>
+
+  <div>
+    <label for="aphone">Alternate Phone</label>
+    <input type="text" name="aphone" id="aphone" >
+  </div>
+
+  <div>
+    <label for="adate">Appointment Date</label>
+    <input type="text" name="adate" id="adate" required />
+    <a href="#" onClick="selectDate(myForm.adate,'anchor2','MM/dd/yyyy',null);" NAME="anchor2" ID="anchor2"><IMG src="images/Calendar.png" border="0"/></a>
+  </div>
+
+  <div>
+    <label for="atime">Appointment Time</label>
+	<select name="atime" id="atime" required>
+		<option value="">Select One</option>
+	  <option value="6">06:00 AM</option>
+	  <option value="7">07:00 AM</option>
+	  <option value="8">08:00 AM</option>
+	  <option value="9">09:00 AM</option>
+	  <option value="10">10:00 AM</option>
+	  <option value="11">11:00 AM</option>
+	  <option value="12">12:00 PM</option>
+	  <option value="13">01:00 PM</option>
+	  <option value="14">02:00 PM</option>
+	  <option value="15">03:00 PM</option>
+	  <option value="16">04:00 PM</option>
+	  <option value="17">05:00 PM</option>
+	  <option value="18">06:00 PM</option>
+	  <option value="19">07:00 PM</option>
+	  <option value="20">08:00 PM</option>
+	</select>
+  </div>
+
+  <div>
+    <label for="service">Residential Servcies</label>
+	<select name="service" id="service" required>
+		<option value="">Select One</option>
+	  <option value="attic">Attic</option>
+	  <option value="bathroom">Bathroom</option>
+	  <option value="kitchen">Kitchen</option>
+	  <option value="deckandpatio">Deck/Patio</option>
+	  <option value="doots">Doors</option>
+	  <option value="windows">Windows</option>
+	</select>
+  </div>
+
+  <div>
+    <label for="textarea">Comment</label>
+    <textarea cols="40" rows="8" name="textarea" id="textarea" required></textarea>
+  </div>
+
+  <div class="buttons">
+    <input type="submit" value="Submit" />
+  </div>
+</div>
+<div id="footer">
+
+	<p>
+		Contact Us: 11929 W Airport Blvd, Stafford, TX 77477
+	</>
+	<p id="demo"></p>
+	<script>
+		var d = new Date();
+		document.getElementById("demo").innerHTML = d.toString();
+	</script>
+</div>
+</form>
+</body>
+</html>
